@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+/***
+ *                  ██╗        ██║ ██████╗ ████████╗
+ *                   ██╗      ██║  ██╔═══╝ ╚══██╔══╝
+ *                    ██╗    ██║   ███████╗   ██║   
+ *                      ██╗ ██║    ╚════██║   ██║   
+ *                        ██║      ███████║   ██║   
+ *                       
+ *         FAST        •        EASY        •        SHIPPING  
+ *    report@VastAtlanta.com
+ *    twitter.com/VastAtlanta
+ *    fb.com/VastAtlanta                                                        
+ */
+ -->
+ <html>
+	<head>
+		<title>Vast Atlanta | Cart </title>
+		<link rel="stylesheet" type="text/css" href="compatibility.css">
+		<link rel="icon" href="images/Favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  		<link rel="stylesheet" type="text/css" href="bouncers.css">
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<meta name="google-signin-scope" content="profile email">
+    	<meta name="google-signin-client_id" content="392133119012-5590s3jbrvvr869j0pqpcrmb7reqd3jk.apps.googleusercontent.com">
+   		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<link rel="stylesheet" type="text/css" href="footer.css">
+		<script src="search.js"></script>
+<style>
+
+
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=455686781785989&autoLogAppEvents=1"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '455686781785989',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v5.0',
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+function statusChangeCallback(response){
+	if(response.status === 'connected'){
+		console.log('Logged in and Authenticated');
+		document.getElementById("Popup_defier").style.display="none";
+	    document.getElementById("00001").style.display="none";
+        document.getElementById("yum").style.display="block";
+		testAPI();
+	} else {
+		console.log('Not authenticated');
+		//document.getElementById("Popup_defier").style.display="block";
+	    document.getElementById("00001").style.display="block";
+        document.getElementById("yum").style.display="none";
+	}
+}
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+function testAPI() {
+	FB.api('/me?fields=name,email,picture.width(150).height(150)', function(response){
+		if(response && !response.error){
+		   console.log(response);
+			buildProfile(response);
+		}
+	})
+}
+function buildProfile(user) {
+	let FBname = `${user.name}`;
+	let FBemail = `${user.email}`;
+	let FBimage = `${user.picture.data.url}`;   //this is the email -- we are not using it yet, but we will use it later
+	document.getElementById("inputA").innerHTML = FBname;
+	document.getElementById("yourself").src = FBimage;
+	
+
+}
+function logout() {
+	  //facebook logout implementation
+	FB.logout(function(response){
+		console.log("Facebook user has successfully signed out!");
+		setElements(false);
+	});
+}
+ function signOut() {
+  
+    //googleAuth logout implementation
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+
+<!-- Horizontal navbar on top-->
+
+<div id='cssmenu'> 
+ <ul>
+   <li><a href='index.html'>Home</a></li>
+   <li class='active'><a href='bouncers.html'>Bouncers</a> </li>
+   <li class='active'><a href='slides.html'>Slides</a>
+      <ul>
+         <li><a href='water_slides.html'>Water Slides</a>
+            <ul>
+               <li><a href='SmallWater_slides.html'>Small</a></li>
+               <li><a href='MediumWater_slides.html'>Medium</a></li>
+			   <li><a href='LargeWater_slides.html'>Large</a></li>
+            </ul>
+         </li>
+		
+         <li><a href='dry_slides.html'>Dry Slides</a>
+            <ul>
+               <li><a href='SmallDry_slides.html'>Small</a></li>
+               <li><a href='MediumDry_slides.html'>Medium</a></li>
+			   <li><a href='LargeDry_slides.html'>Large</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li class='active'><a href='interactives.html'>Interactives</a>
+      <ul>
+         <li><a href='Games.html'>Interactive Games</a></li>
+         <li><a href='PartyExtras.html'>Foam Parties & Extras</a></li>
+      </ul>
+   </li>
+   <li class='active'><a href='equipment.html'>Equipment</a>
+      <ul>
+         <li><a href='Tables&Chairs.html'>Tables & Chairs</a></li>
+         <li><a href='ConcessionMachine.html'>Concession Machine</a></li>
+		  <li><a href='PartyEquipment.html'>Party Equipment</a></li>
+      </ul>
+   </li>
+   <li class='active'><a href='CustomerService.html'>Customer Service</a>
+      <ul>
+         <li><a href='ContactUs.html'>Contact Us</a></li>
+         <li><a href='DeliveryInfo.html'>Delivery Info</a></li>
+		 <li><a href='Rewards.html'>Rewards</a></li>
+		 <li><a href='AboutUs.html'>About us</a></li>
+		 <li><a href='FAQs.html'>FAQs</a></li>
+		 <li><a href='PrivacyPolicy.html'>Privacy Policy</a></li>
+      </ul>
+   </li>
+  <li>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</li>
+   
+   <li> 
+
+<div>
+  <div > <input id="leggo" onclick="setInterval(Major, 1000)" onmouseover="Change(this)" onmouseout="ReverseChange(this)" style="width: 50%; height: 46px; position: fixed; top:3; border: none; background-color: lightgrey;" type="text" placeholder="&nbsp;&nbsp;Search All Departments" ></input>
+ 
+ <img style="height: 46px; width: 46px;position: absolute; right: 0; float: right; border: none; background-color: lightgrey;" src="images/Search.png"></img>
+  </div>
+ 
+    
+</div>
+   </li>
+   <li id="00001">
+	   <a style="align: right; float: right; position: fixed; right:0; " href="#" onclick="Popup();">Login</a>
+   </li>
+	 <div id="main" ID="00002" >
+		 <li id="00002" >
+			 <a id="yum" style="display: none; align: right; float: right; position: fixed; right:0;" href="#" onclick="Popup123();">
+				 <button id="yum" class="openbtn" style="position: fixed; top:3px; right: 3px;" onclick="openNav()">☰      
+				 </button> 
+			 </a>
+		 </li>
+	 </div>
+</ul>
+
+<div style="z-index: 100000000000000000000000;" id="mySidebar" class="sidebar">
+  <a style="position: relative;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <p style="text-align: center;"> <i> Signed in as </i></p><br><p style="text-align: center; font-size: 20px; color: white;" id="inputA"></p>
+  <div class="hover08 column">
+    <div>
+     <figure><a href="#"><img id="yourself" src="" style="width:70%; height: 70%;"></img></a></figure>
+    </div>
+  </div>
+  <a href="cart.html">Your Cart</a>
+  <a href="PastOrders.html">Past Orders</a>
+  <a href="https://vast--roycea.repl.co/">Forum</a>
+  <a href="#">Reviews</a>
+  <a href="index.html" onclick="signOut();logout();">Sign out</a>
+</div>
+</div>
+
+
+
+</section>
+<div id="Popup_defier" style="top: 30%; left: 42%; position: fixed; z-index: 10000000000000000; width: 20%; height: 400px; background-color: lightgrey; display: none;  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
+	<center><form action="/action_page.php">
+	<br><br>
+  Email:<br>
+  <input type="text" name="firstname" >
+  <br>
+  Password:<br>
+  <input type="password" name="lastname" >
+  <br><br>
+  <input type="submit" value="Submit">
+</form> <br>
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button><br><br>
+ <div class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onSignInFailure" data-theme="dark"></div><br>
+<!--Facebook testing-->
+<div style="display: none;" class="fb-login-button" data-width="100" data-size="medium" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
+<!---->
+
+
+</center>
+ <div style="position: absolute; top:3px; right:3px;font-size: 17px; "><button style="border: none; background-color: transparent;" onclick="close_popup()">X</button></div> </div>
+<!-- Site footer -->
+   <footer style="position: absolute; bottom:0; background-color: #333333; height: 5%; width: 99%; color: white; text-align: left;"> <p style="position: relative; bottom: -8px;" >&nbsp;&nbsp;© Vast Atlanta 2019 </p> <p style="float: right;"> <img style="position: relative; bottom: 28px;" src="images/Instagram.png"></img> <img style="position: relative; bottom: 28px;" src="images/Facebook.png"></img><img style="position: relative; bottom: 28px;" src="images/Twitter.png"></img> &nbsp; &nbsp;
+</footer>
+
+
+<button class="collapsible">Bouncers</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Slides</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Interactives</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="collapsible">Equipment</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+<div style="display: none;" id="Bouncer1"> This is Bouncer 1 </div>
+<div style="display: none;" id="Bouncer2"> This is Bouncer 2 </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<script>
+	window.onload = GetAll;
+	function GetAll() {
+	 	let Yee1 = localStorage.getItem("Bouncer1");
+		 let Yee2 = localStorage.getItem("Bouncer2");
+		 if(Yee1 == "Bouncer1") {
+			 document.getElementById("Bouncer1").style.display = "block";
+		 }
+		  if(Yee2 == "Bouncer2") {
+			  document.getElementById("Bouncer2").style.display = "block";
+		 }
+	}
+	</script>
+<script>
+	function NextSlide() {
+		document.getElementById("Table1").style.display="none";
+		document.getElementById("Table2").style.display="block";
+		document.getElementById("Next").style.display = "none";
+		document.getElementById("Back").style.display = "block";
+	}
+	function BackSlide() {
+		document.getElementById("Table1").style.display="block";
+		document.getElementById("Table2").style.display="none";
+		document.getElementById("Next").style.display = "block";
+		document.getElementById("Back").style.display = "none";
+	}
+</script>
+  <script>
+	  
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginRight = "250px";
+   document.getElementById("yum").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+     document.getElementById("yum").style.display="block";
+}
+</script>
+   <script>
+	   function close_popup() {
+		   document.getElementById("Popup_defier").style.display="none";
+	   }
+	   function Popup() {
+		   document.getElementById("Popup_defier").style.display="block";
+	   }
+	</script>
+    <script>
+	
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+document.getElementById("yourself").src = profile.getImageUrl();
+document.getElementById("Popup_defier").style.opacity = '0';
+ document.getElementById("00001").style.opacity = '0';
+  document.getElementById("yum").style.display="block";
+document.getElementById("inputA").innerHTML = profile.getName();
+ //alert(profile.getGivenName());
+      }
+    </script>
+<!--<a href="index.html" onclick="signOut();">Sign out</a>-->
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+ <script>
+//get window height minus 50 pixels for the headers height
+var height = $(window).height() - 30;
+$(".main").height(height);
+window.onresize = function(event) {
+var height = $(window).height() - 30;
+$(".main").height(height);
+};
+	</script>
+
+<script>
+	function ClickBouncer1() {
+		alert("Bouncer 1 was clicked!");
+	}
+</script>
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  //localStorage.setItem("lastname", "Smith");
+  // Retrieve
+ // document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
+
+<!--we are going to be moving all of this javascript down to the 'cart' area, but for testing purposes and after the cold we can do the boring crap-->
+
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Your cart has " + localStorage.clickcount + " items";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<script>
+function clickCounter123() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)-1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Your cart has " + localStorage.clickcount + " items.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+
+</body>
+</html>
