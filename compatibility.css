@@ -1,0 +1,97 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.logo {display: block;}
+  #cssmenu {
+	zoom: 100%;
+}
+#footer {
+	zoom: 100%;
+}
+.header {
+	zoom: 100%;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.logo {display: block;}
+ #cssmenu {
+	zoom: 100%;
+}
+#footer {
+	zoom: 100%;
+}
+.header {
+	zoom: 100%;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) --my phone rn lol - royce */
+@media only screen and (min-width: 768px) {
+	.logo {display: none;}
+
+#cssmenu {
+	zoom: 100%;
+}
+#footer {
+	zoom: 100%;
+}
+.header {
+	zoom: 100%;
+}
+
+.uis-container {
+	zoom: 100%;
+}
+} 
+/* Large devices (laptops/desktops, 992px and up) - Lenovo computer */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+#cssmenu {
+	zoom: 100%;
+}
+#footer {
+	zoom: 100%;
+}
+.header {
+	zoom: 100%;
+}
+
+.uis-container {
+	zoom: 100%;
+}
+
+} 
+
+@media only screen and (min-width: 1200px) { /*work here*/
+  .example {background: pink;}
+#cssmenu {
+	zoom: 80%;
+}
+
+#footer {
+	zoom: 80%;
+}
+.header {
+	zoom: 80%;
+}
+
+}
+/*Big monitor*/
+ @media only screen and (min-width: 1400px) {
+  .example {background: pink;}
+#cssmenu {
+	zoom: 100%;
+}
+#footer {
+	zoom: 100%;
+}
+.header {
+	zoom: 100%;
+}
+
+.uis-container {
+	zoom: 100%;
+}
+
+}
+
+
