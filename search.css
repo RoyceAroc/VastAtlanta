@@ -1,0 +1,13 @@
+#list > aside {
+	font-size: 20px;
+	border-width: 0.5px;
+	border-color: gold;
+	border-style: solid;
+	border-bottom-right-radius: 15px;
+	color: #000000;
+	background-color: lightgrey;
+	}
+	#list > aside:hover {
+		background-color: grey;
+		color: gold;
+	}
