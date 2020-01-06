@@ -31,7 +31,8 @@
    		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<link rel="stylesheet" type="text/css" href="footer.css">
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
-      
+                <link rel="stylesheet" type="text/css" href="search.css">
+		<script src="search.js"></script>
 	</head>
 <body>
 
@@ -219,6 +220,20 @@ function logout() {
         <h1 class="title">Vast Atlanta</h1>
             </section>
         </section>
+	<!--Searchbar list--><br><br>
+	
+ <div id="list" style="width: 48.7%;top:36px;position: fixed; left: 612px;z-index: 10000000000000000000000000000;">
+
+    <aside style="display: none;" id="Search_Tables"> Tables </aside>	
+	<aside style="display: none;" id="Search_Chairs"> Chairs</aside>
+	<aside style="display: none;"  id="Search_Concession_Machine"> Concession Machine</aside>
+	<aside style="display: none;"  id="Search_Party_Equipment">Party Equipment</aside>
+	<aside style="display: none;" id="Search_Interactive_Games">Interactive Games</aside>
+	<aside style="display: none;"  id="Search_Dry_Slides">Dry Slides</aside>
+	<aside style="display: none;"  id="Search_Water_Slides">Water Slides</aside>
+	<aside style="display: none;"  id="Search_Bouncers">Bouncers</aside>
+</div> 
+			  
 <section >
 <div class="uis-container">
 	<div>
@@ -270,7 +285,7 @@ $('.uis-form-icon').on('click', function () {
 	  
 	 </div>
 	
-
+<p style="color: white;" id="subject"></p>
 <!-- Site footer -->
     <footer id="footer" style="position: absolute; bottom:0; background-color: #333333; height: 5%; width: 99%; color: white; text-align: left;"> <p class="copyright" >&nbsp;&nbsp;© Vast Atlanta 2019 </p> <p style="float: right;"> <img id="Insta" src="images/Instagram.png"></img> <img style="position: relative; bottom: 28px;" src="images/Facebook.png"></img><img style="position: relative; bottom: 28px;" src="images/Twitter.png"></img> &nbsp; &nbsp;
 </footer>
