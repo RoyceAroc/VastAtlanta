@@ -294,7 +294,6 @@ padding-top: 60px;
     opacity: 0;
   }
 }
-
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -326,7 +325,7 @@ padding-top: 60px;
 }
 #cssmenu {
   font-family: Montserrat, sans-serif;
-  background: #333333;
+ background: #333333;
 }
 #cssmenu > ul > li {
   float: left;
@@ -643,6 +642,7 @@ padding-top: 60px;
     display: none;
   }
 }
+.
 footer{
   margin:0;
   text-align: right;
