@@ -55,9 +55,6 @@
 	zoom: 100%;
 }
 
-.uis-container {
-	zoom: 100%;
-}
 
 } 
 
@@ -73,7 +70,15 @@
 .header {
 	zoom: 80%;
 }
-
+.uis-container {
+	zoom: 80%;
+}
+.lick {
+	zoom: 80%;
+}
+.cool {
+	zoom: 80%;
+}
 }
 /*Big monitor*/
  @media only screen and (min-width: 1400px) {
@@ -93,5 +98,7 @@
 }
 
 }
+
+
 
 
