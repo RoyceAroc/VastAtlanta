@@ -374,7 +374,8 @@ body, html {
 }
 body {
 overflow:hidden;
-  background-image: url("https://raw.githubusercontent.com/AvionAirlines/ElectricElixir.github.io/master/images/BackgroundInterface.png");
+
+ // background-image: url("https://raw.githubusercontent.com/AvionAirlines/ElectricElixir.github.io/master/images/BackgroundInterface.png");
   background-repeat: repeat;
   z-index: 100;
 
