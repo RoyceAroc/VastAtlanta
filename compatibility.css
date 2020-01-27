@@ -110,11 +110,18 @@
 .uis-container {
 	zoom: 100%;
 }
-
+.wow {
+	zoom: 125%;
+}
 #betaje {
 	display:block;
 }
 }
+
+
+
+
+
 
 
 
