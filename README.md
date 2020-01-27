@@ -1,2 +1,18 @@
-# VastAtlanta
-Made by Royce Arockiasamy. This website is part of 'E-Business' frome one of FBLA's wide variety of events. All designs, incorporations, and components are not to be infringed upon, unless notice from the author. Moving on, this website has been protected with an MIT license which is not to be tampered with.
+VAST ATLANTA 	VERSION:2.0    	START DATE:01/010/2020
+====================================================================================================================
+AUTHOR: ROYCE AROCKIASAMY
+VOICE: 470-587-5432
+EMAIL: ROYCEADEN@GMAIL.COM
+====================================================================================================================
+WHAT DO WE HAVE?
+- 
+====================================================================================================================
+VIEWING INSTRUCTIONS:
+- IN ORDER TO VIEW THE SOURCE CODE RAW, PLEASE DOWNLOAD IT INTO THE FILES OF YOUR COMPUTER. THIS IS TO VIEW IT ON YOUR LOCAL C BROWSER.
+- YOU CAN ALSO VIEW THE WEBSITE IN ITS RUNNING DOMAIN
+====================================================================================================================
+LOGIN INSTRUCTIONS:
+- YOU HAVE TWO OPTIONS TO LOG IN:
+ * GOOGLE OUATH SIGN IN
+ * FACEBOOK OUATH SIGN IN
+====================================================================================================================
