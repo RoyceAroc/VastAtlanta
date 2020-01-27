@@ -1,64 +1,115 @@
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
+#Insta {
+position: relative; 
+bottom: 28px;
+}
+.copyright {
+	position: relative; 
+	bottom: -8px;
+}
+/* Container
+ ============================== */
+.uis-container {
+ height: 400px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input
+ ============================== */
+.uis-input {
+  box-sizing: border-box;
+  width: 0;
+  border-top: none;
+  border-bottom: 2px solid transparent;
+  border-left: none;
+  border-right: none;
+  padding: 0 12px;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  height: 40px;
+  margin: 0;
+  border-radius: 0;
+  vertical-align: middle;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+}
+
+.uis-input:focus {
   outline: none;
-  font-size: 15px;
 }
 
-.active123, .collapsible:hover {
-  background-color: #555;
+.uis-input::-ms-clear {
+  display: none;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+/*
+ * Show the overflow in Edge
+ */
+.uis-input {
+  overflow: visible;
 }
 
-.active123:after {
-  content: "\2212";
+/*
+ * Remove default style in iOS.
+ */
+.uis-input {
+  -webkit-appearance: none;
 }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-.catalog {
-	background-color: lightgrey; 
-	position: fixed;
-	left: 0; 
-	top:4.7%;
-	height: 90.3%;
-	width: 17%;
-}
-.right_side {
-	position: fixed;
-	right: 70%; 
-}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  position: fixed; 
-  left: 20%;
+/* Icons
+ ============================== */
+.uis-form-wrapper {
+  position: relative;
+  width: 200px;
+  left: 154%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+.uis-form-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+  color: #FFFFFF;
+  transition: all 0.4s ease-in-out;
+
+  height: 300px;
 }
 
+.uis-form-icon.uis-active {
+  transform: rotateY(90deg);
+}
 
+.uis-input:focus.uis-active {
+  width: 100%;
+  border-color: #FFFFFF;
+}
+
+/* Pointer
+ ============================== */
+.uis-point {
+  cursor: pointer;
+}
+
+/* Link
+ ============================== */
+.uis-link-wrapper {
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.uis-link {
+  font-family: Poppins;
+  color: #FFFFFF;
+  text-decoration: none;
+}
 a:hover{
 text-decoration : none
 }  
@@ -95,11 +146,11 @@ text-decoration : none
 }
 .title{
  color: white;
-  text-shadow: 3px 3px purple;
-  font-size: 800%;
+  text-shadow: 3px 3px #FFDF00; /*color for gold */
+  font-size: 900%;
   position: relative;
-  left: 35%;
-  top: 50%;
+  left: 46%;
+  top: 100px; 
  
 }
 .titleWrapper{
@@ -116,10 +167,12 @@ body, html {
 	width: 100%;
   height: 100%;
   margin: 0;
+
 }
 .bg {
   /* The image used */
- //background-image: url("http://getwallpapers.com/wallpaper/full/5/1/c/1007476-beautiful-cool-party-backgrounds-1920x1200-full-hd.jpg");
+ /*background-image: url("http://getwallpapers.com/wallpaper/full/5/1/c/1007476-beautiful-cool-party-backgrounds-1920x1200-full-hd.jpg");*/
+ background-image: url("images/Background_index.jpg");
  z-index: 5;
   /* Full height */
   height: 88%; 
@@ -130,21 +183,16 @@ body, html {
 }
 body {
 overflow:hidden;
- // background-image: url("https://raw.githubusercontent.com/AvionAirlines/ElectricElixir.github.io/master/images/BackgroundInterface.png");
- background-color: white;
+  //background-image: url("https://raw.githubusercontent.com/AvionAirlines/ElectricElixir.github.io/master/images/BackgroundInterface.png");
   background-repeat: repeat;
   z-index: 100;
+
 }
 .main {
   margin-top: 0px;
   overflow-y: scroll;
 }
 
-html, body{
-    
-    background-color: #333;
-    overflow: hidden;
-}
 canvas{
     background-color: #391934;
 	 position: absolute;
@@ -263,7 +311,6 @@ padding-top: 60px;
     opacity: 0;
   }
 }
-
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -295,7 +342,7 @@ padding-top: 60px;
 }
 #cssmenu {
   font-family: Montserrat, sans-serif;
-  background: #333333;
+ background: #333333;
 }
 #cssmenu > ul > li {
   float: left;
@@ -1140,6 +1187,51 @@ footer{
   padding: 16px;
 }
 
+.sidebar1 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 8%;
+  right: 0;
+  margin-right: -5%;
+  background-color: lightyellow;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar1 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar1 a:hover {
+  color: red;
+}
+
+.sidebar1  {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+.openbtn1:hover {
+  background-color: transparent;
+}
+
+#main1 {
+  transition: margin-left .5s;
+  padding: 16px;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
