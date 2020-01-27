@@ -254,7 +254,7 @@ FB.getLoginStatus(function(response) {
 function statusChangeCallback(response){
 	if(response.status === 'connected'){
 		console.log('Logged in and Authenticated');
-		    document.getElementById("si").style.display="none";
+		 
 		document.getElementById("Popup_defier").style.display="none";
 	    document.getElementById("00001").style.display="none";
         document.getElementById("yum").style.display="block";
@@ -265,7 +265,7 @@ function statusChangeCallback(response){
 		//document.getElementById("Popup_defier").style.display="block";
 	    document.getElementById("00001").style.display="block";
         document.getElementById("yum").style.display="none";
-		    document.getElementById("si").style.display="block";
+		   
 	}
 }
 function checkLoginState() {
@@ -683,9 +683,8 @@ function closeNav() {
 	   function Popup() {
 		   document.getElementById("Popup_defier").style.display="block";
 		   document.getElementById("weak").style.display="none";
-		  //  document.getElementById("si").style.display="none";
+		 
 			document.getElementById("bruh").style.display="none";
-		   //document.getElementById("cssmenu").style.display="none";
 	   }
 	</script>
     <script>
