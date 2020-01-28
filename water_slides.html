@@ -22,7 +22,7 @@
 		<link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   		<link rel="stylesheet" type="text/css" href="https://roycearoc.github.io/VastAtlanta/compatibility.css">
-       	<link rel="stylesheet" type="text/css" href="index.css">
+       	<link rel="stylesheet" type="text/css" href="bouncers.css">
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name="google-signin-scope" content="profile email">
@@ -32,6 +32,194 @@
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
                 <link rel="stylesheet" type="text/css" href="https://roycearoc.github.io/VastAtlanta/search.css">
 		<script src="https://roycearoc.github.io/VastAtlanta/search.js"></script>
+		<style>
+			 body {
+	  overflow-x: hidden;
+	  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	}
+	::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #343434;
+    box-shadow: inset 0 0 2px #343434;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: gold;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: gold;
+  }
+  .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+}
+.social-icons li
+{
+  display:inline-block;
+
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+
+  width:44px;
+  height:44px;
+  text-align:center;
+ margin-top: -125px;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+ // line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#FFFFF
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
 	</head>
 <body style=" overflow-y: scroll;">
 
@@ -66,7 +254,7 @@ FB.getLoginStatus(function(response) {
 function statusChangeCallback(response){
 	if(response.status === 'connected'){
 		console.log('Logged in and Authenticated');
-		    document.getElementById("si").style.display="none";
+		 
 		document.getElementById("Popup_defier").style.display="none";
 	    document.getElementById("00001").style.display="none";
         document.getElementById("yum").style.display="block";
@@ -77,7 +265,7 @@ function statusChangeCallback(response){
 		//document.getElementById("Popup_defier").style.display="block";
 	    document.getElementById("00001").style.display="block";
         document.getElementById("yum").style.display="none";
-		    document.getElementById("si").style.display="block";
+		   
 	}
 }
 function checkLoginState() {
@@ -174,16 +362,16 @@ function logout() {
    <li> 
 
 <div>
-  <div > <input id="leggo" onclick="setInterval(Major, 1000)" onmouseover="Change(this)" onmouseout="ReverseChange(this)" style="width: 50%; height: 45px; position: fixed; top:3; border: none; background-color: lightgrey;" type="text" placeholder="&nbsp;&nbsp;Search All Departments" ></input>
+  <div > <input id="leggo" onclick="setInterval(Major, 1000)" onmouseover="Change(this)" onmouseout="ReverseChange(this)" style="width: 50%; height: 45.6px; position: fixed; top:3; border: none; background-color: lightgrey;" type="text" placeholder="&nbsp;&nbsp;Search All Departments" ></input>
  
- <img style="height: 45px; width: 46px;position: absolute; right: 0; float: right; border: none; background-color: lightgrey;" src="images/Search.png"></img>
+ <img style="height: 45.6px; width: 46px;position: absolute; right: 0; float: right; border: none; background-color: lightgrey;" src="https://roycearoc.github.io/VastAtlanta/images/Search.png"></img>
   </div>
  
     
 </div>
    </li>
-   <li style="z-index: 10000000000000000000000;" id="00001">
-	   <a id="si" style="align: right; float: right; position: fixed; right:0; z-index: 10000000000000000000000; " href="#" onclick="Popup()">Login</a>
+   <li id="00001">
+	   <a style="align: right; float: right; position: fixed; right:0; " href="#" onclick="Popup();">Login</a>
    </li>
 	 <div id="main" ID="00002" >
 		 <li id="00002" >
@@ -228,15 +416,119 @@ function logout() {
 </div> 
 			  
 <section style="z-index: 10000000000000;" >
-<h1> <center> <u>Water Slides</u> </center></h1>
-<summary data=aos="fade-left">
-	<img src="https://roycearoc.github.io/VastAtlanta/images/WetSlide1.jpg" style="width: 40%; position: relative; left: 10%;"></img>
-	<aside style="float: right; margin-right: 20%;" id="cost1"><h3 style="font-family: URW Chancery L, cursive;"> Water Parade</h3><ul style="text-align: left;"><li>100 FT long</li><li>Roof Decoration</li><li>Water Circulation</li></ul><i>Price:</i> <p style="color:green;">$50 &nbsp;<strike style="color: red;">$490</strike></p><button style="background-color: lightgrey; border-color: gold; color: white; border-style: solid; border-radius: 6px;" type="button" onclick="Place6()" value="Add to Cart">Add to Cart </button>  </aside>
+<h1> <center> <u> Water Slides</u> </center></h1>
+<summary data-aos="fade-right">
+<img src="https://roycearoc.github.io/VastAtlanta/images/WetSlide1.jpg" style="height: 400px; width: 40%; position: relative; left: 10%;"></img>
+	<aside style="float: right; margin-right: 20%;" id="cost1"><h3 style="font-family: URW Chancery L, cursive;"> Water Parade</h3><ul style="text-align: left;"><li>100 FT Long</li><li>Roof Decoration</li><li>Water Circulation </li></ul>
+	<section>
+	<iframe  id="wee2" scrolling="no" style="display: none; width: 150%; height: 80px;overflow: hidden;border: none; background-color: white; oveflow-x: none;" src="https://WaterSlide1.roycea.repl.co/?uname=Guest&rname=Bouncer3&enSubmit=Enter"></iframe>
+	<img id="wee1" style="width: 50%; height: 50%;" src="images/Loading.gif"></img>
+	<script>
+		setTimeout(function(){ document.getElementById("wee1").style.display = "none";
+		document.getElementById("wee2").style.display = "block"; }, 6000);
+	</script>
+</section>
+	<i>Price:</i> <p style="color:green;">$50 &nbsp;<strike style="color: red;">$490</strike></p>  <select id="fun1" name="Numbers">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>&nbsp;&nbsp;&nbsp;<button style="background-color: lightgrey; border-color: gold; color: white; border-style: solid; border-radius: 6px;" type="button" onclick="Place6()" value="Add To Cart">Add To Cart </button><br><br> <button class="openbtn1" style="background-color: transparent;"  type="button"  value="Add To Cart"><i>More Information</i> ></button> </aside>
+	
+</div>
+
+	</summary>
 <center><hr style='border-top: 1px solid red; width: 80%;'></hr></center>
-	<img src="https://roycearoc.github.io/VastAtlanta/images/WetSlide2.jpg" style="width: 40%; position: relative; left: 10%;"></img>
-	<aside style="float: right; margin-right: 20%;"id="cost1"><h3 style="font-family: URW Chancery L, cursive;"> Loop 'Di Loop</h3><ul style="text-align: left;"><li>Fast circulation</li><li>Comfort Max</li><li>Slide entrance</li></ul><i>Price:</i> <p style="color:green;">$57 &nbsp;<strike style="color: red;">$510</strike></p><button style="background-color: lightgrey; border-color: gold; color: white; border-style: solid; border-radius: 6px;" type="button" onclick="Place7()" value="Add to Cart">Add to Cart</button>  </aside>
-	<center><hr style='border-top: 1px solid red; width: 80%;'></hr></center>
+
+	<summary data-aos="fade-left">
+<img src="https://roycearoc.github.io/VastAtlanta/images/WetSlide2.jpg" style=" width: 40%; position: relative; left: 10%;"></img>
+	<aside style="float: right; margin-right: 20%;" id="cost1"><h3 style="font-family: URW Chancery L, cursive;"> Loop 'Di Loop</h3><ul style="text-align: left;"><li>Fast Circulation </li><li>Comfort Max</li><li>Slide Entrance </li></ul>
+	<section>
+	<iframe  id="wee4" scrolling="no" style="display: none; width: 150%; height: 80px;overflow: hidden;border: none; background-color: white; oveflow-x: none;" src="https://WaterSlide2.roycea.repl.co/?uname=Guest&rname=Bouncer3&enSubmit=Enter"></iframe>
+	<img id="wee3" style="width: 50%; height: 50%;" src="images/Loading.gif"></img>
+	<script>
+		setTimeout(function(){ document.getElementById("wee3").style.display = "none";
+		document.getElementById("wee4").style.display = "block"; }, 6000);
+	</script>
+</section>
+	<i>Price:</i> <p style="color:green;">$57 &nbsp;<strike style="color: red;">$510</strike></p>  <select id="fun2" name="Numbers">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>&nbsp;&nbsp;&nbsp;<button style="background-color: lightgrey; border-color: gold; color: white; border-style: solid; border-radius: 6px;" type="button" onclick="Place7()" value="Add To Cart">Add To Cart </button><br><br> <button class="openbtn1" style="background-color: transparent;"  type="button"  value="Add To Cart"><i>More Information</i> ></button> </aside>
+	
+</div>
+ 
+	</summary>
+	
+
+<center><hr style='border-top: 1px solid red; width: 80%;'></hr></center>
+<!--NEW-->
+<!--
+	<summary data-aos="fade-right">
+<img src="https://roycearoc.github.io/VastAtlanta/images/DrySlide2.jpg" style=" width: 40%; position: relative; left: 10%;"></img>
+	<aside style="float: right; margin-right: 20%;" id="cost1"><h3 style="font-family: URW Chancery L, cursive;"> Cooling Ice</h3><ul style="text-align: left;"><li>Smart, Rich, Feel</li><li>Cotton</li><li>28 FT Tall</li></ul>
+	<section>
+	<iframe  id="wee6" scrolling="no" style="display: none; width: 150%; height: 80px;overflow: hidden;border: none; background-color: white; oveflow-x: none;" src="https://DrySlide2.roycea.repl.co/?uname=Guest&rname=Bouncer3&enSubmit=Enter"></iframe>
+	<img id="wee5" style="width: 50%; height: 50%;" src="images/Loading.gif"></img>
+	<script>
+		setTimeout(function(){ document.getElementById("wee5").style.display = "none";
+		document.getElementById("wee6").style.display = "block"; }, 6000);
+	</script>
+</section>
+	<i>Price:</i> <p style="color:green;">$42 &nbsp;<strike style="color: red;">$420</strike></p>  <select id="fun2" name="Numbers">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>&nbsp;&nbsp;&nbsp;<button style="background-color: lightgrey; border-color: gold; color: white; border-style: solid; border-radius: 6px;" type="button" onclick="Place5()" value="Add To Cart">Add To Cart </button><br><br> <button class="openbtn1" style="background-color: transparent;"  type="button"  value="Add To Cart"><i>More Information</i> ></button> </aside>
+	
+</div>
+ 
+	</summary>
+	
+	<!--NEW-->
+<!--
+	<center><hr style='border-top: 1px solid red; width: 80%;'></hr></center><br><br>
+
+	<summary data-aos="fade-left">
+<img src="https://roycearoc.github.io/VastAtlanta/images/DrySlide1.jpeg" style=" width: 40%; height: 400px; position: relative; left: 10%;"></img>
+	<aside style="float: right; margin-right: 20%;" id="cost1"><h3 style="font-family: URW Chancery L, cursive;"> Traditional</h3><ul style="text-align: left;"><li>Double Ladder </li><li>Safety Net</li><li>20 FT Tall </li></ul>
+	<section>
+	<iframe  id="wee11" scrolling="no" style="display: none; width: 150%; height: 80px;overflow: hidden;border: none; background-color: white; oveflow-x: none;" src="https://DrySlide1.roycea.repl.co/?uname=Guest&rname=Bouncer3&enSubmit=Enter"></iframe>
+	<img id="wee10" style="width: 50%; height: 50%;" src="images/Loading.gif"></img>
+	<script>
+		setTimeout(function(){ document.getElementById("wee10").style.display = "none";
+		document.getElementById("wee11").style.display = "block"; }, 6000);
+	</script>
+</section>
+	<i>Price:</i> <p style="color:green;">$57 &nbsp;<strike style="color: red;">$510</strike></p>  <select id="fun2" name="Numbers">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>&nbsp;&nbsp;&nbsp;<button style="background-color: lightgrey; border-color: gold; color: white; border-style: solid; border-radius: 6px;" type="button" onclick="Place4()" value="Add To Cart">Add To Cart </button><br><br> <button class="openbtn1" style="background-color: transparent;"  type="button"  value="Add To Cart"><i>More Information</i> ></button> </aside>
+	
+</div>
+ 
+	</summary>
+	
+
+<center><hr style='border-top: 1px solid red; width: 80%;'></hr></center>
+-->
 <script>
+function Place4() {
+		alert("Item Was Added to Cart Successfully!");
+	localStorage.setItem("DrySlide1", "DrySlide1");
+	localStorage.setItem("BrowsingHistory4", "DrySlide1");
+}
+function Place5() {
+		alert("Item Was Added to Cart Successfully!");
+	localStorage.setItem("DrySlide2", "DrySlide2");
+	localStorage.setItem("BrowsingHistory5", "DrySlide2");
+}
+
 function Place6() {
 		alert("Item Was Added to Cart Successfully!");
 	localStorage.setItem("WetSlide1", "WetSlide1");
@@ -248,10 +540,6 @@ function Place7() {
 	localStorage.setItem("BrowsingHistory7", "WetSlide2");
 }
 </script>
-	</summary>
-
-<br><br>
-
 <script id="rendered-js">
 $('.uis-form-icon').on('click', function () {
   $(this).addClass('uis-active');
@@ -337,9 +625,58 @@ $('.uis-form-icon').on('click', function () {
 
 </center>
  <div style="position: absolute; top:3px; right:3px;font-size: 17px; "><button style="border: none; background-color: transparent;" onclick="close_popup()">X</button></div> </div>
- 
-<!-- Site footer -->
-    <footer id="footer" style="position: fixed;bottom:0; background-color: #333333; height: 5%; width: 99%; color: white; text-align: left;"> <p class="copyright" >&nbsp;&nbsp;© Vast Atlanta 2020 </p> <p style="float: right;"> <img id="Insta" src="images/Instagram.png"></img> <img style="position: relative; bottom: 28px;" src="images/Facebook.png"></img><img style="position: relative; bottom: 28px;" src="images/Twitter.png"></img> &nbsp; &nbsp;
+  <!-- Site footer -->
+    <footer id="bruh" style="text-align: left;bottom:0; position: static;" class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Vast Atlanta, a superior Party rental store, has been the supreme choice for consumers across Cumming GA. Out of state shipping is not supported, and in-store pickup is necessary. Other than that, Vast Atlanta holds no cons. We, united as brothers and siters, bring forth the best of the best in terms of products, durability, and luxury. Thanks for choosing us!</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="bouncers.html">Bouncers</a></li>
+              <li><a href="slides.html">Slides</a></li>
+              <li><a href="interactives.html">Interactives</a></li>
+              <li><a href="ConcessionMachine.html">Concession Machines</a></li>
+              <li><a href="PartyEquipment.html">Party Equipment</a></li>
+              <li><a href="Tables&Chairs.html">Tables & Chairs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li><a href="Rewards.html">Rewards</a></li>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="DeliveryInfo.html">Delivery Info</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="index.html">VastAtlanta</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><br><a class="facebook" href="#"><i style="top: 30%; position: relative;" class="fa fa-facebook"><br></i></a></li>
+              <li><a class="twitter" href="#"><i style="top: 30%; position: relative;"  class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i style="top: 30%; position: relative;"  class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i style="top: 30%; position: relative;"  class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
 </footer>
    </body>
 
@@ -362,13 +699,14 @@ function closeNav() {
 	   function close_popup() {
 		   document.getElementById("Popup_defier").style.display="none";
    document.getElementById("weak").style.display="block";
+   	document.getElementById("bruh").style.display="block";
 		   //document.getElementById("cssmenu").style.display="block";
 	   }
 	   function Popup() {
 		   document.getElementById("Popup_defier").style.display="block";
 		   document.getElementById("weak").style.display="none";
-		    document.getElementById("si").style.display="none";
-		   //document.getElementById("cssmenu").style.display="none";
+		 
+			document.getElementById("bruh").style.display="none";
 	   }
 	</script>
     <script>
@@ -382,7 +720,7 @@ function closeNav() {
         console.log('Family Name: ' + profile.getFamilyName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
-    document.getElementById("si").style.display="none";
+    
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
@@ -414,7 +752,7 @@ var height = $(window).height() - 30;
 $(".main").height(height);
 };
 	</script>
-<div style="top:0; position: fixed;background-color: #333333; height: 36px; width: 100%;" class=""></div>
+<div class="wow" style="top:0; position: fixed;background-color: #333333; height: 36px; width: 100%;" class=""></div>
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
 <script id="rendered-js">
@@ -433,4 +771,3 @@ $(".main").height(height);
 </script>
 
 </html>
-
