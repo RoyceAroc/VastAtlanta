@@ -102,9 +102,12 @@ if (onsearch.includes("WA") == false & onsearch.includes("SL") == false) {
 
 function Change(x) {
   x.style.backgroundColor = "white";
+  document.getElementById("change").style.display = "none";
  
 }
 
 function ReverseChange(x) {
  x.style.backgroundColor = "lightgrey";
+ document.getElementById("change").style.display = "block";
 }
+
