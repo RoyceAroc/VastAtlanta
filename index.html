@@ -134,8 +134,8 @@ function myFunction1() {
   <a style="align: right; float: right; position: fixed; right:0; " href="#" onclick="Popup1();">Login</a>
    <div id="main" ID="00002" >
 		 <li id="00002" >
-			 <a id="yum" style="display: none; align: right; float: right; position: fixed; right:0;" href="#" onclick="Popup123();">
-				 <button id="yum" class="openbtn" style="position: fixed; top:3px; right: 3px;" onclick="openNav()">☰      
+			 <a id="yum1" style="display: none; align: right; float: right; position: fixed; right:0;" href="#" onclick="Popup123();">
+				 <button id="yum1" class="openbtn" style="position: fixed; top:3px; right: 3px;" onclick="openNav()">☰      
 				 </button> 
 			 </a>
 		 </li>
@@ -144,13 +144,13 @@ function myFunction1() {
 function openNav1() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginRight = "250px";
-   document.getElementById("yum").style.display = "none";
+   document.getElementById("yum1").style.display = "none";
 }
 
 function closeNav1() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginRight= "0";
-     document.getElementById("yum").style.display="block";
+     document.getElementById("yum1").style.display="block";
 }
 </script>
 	 </div>
@@ -232,15 +232,19 @@ function statusChangeCallback(response){
 	if(response.status === 'connected'){
 		console.log('Logged in and Authenticated');
 		document.getElementById("Popup_defier").style.display="none";
+			document.getElementById("Popup_defier101").style.display="none";
 	    document.getElementById("00001").style.display="none";
         document.getElementById("yum").style.display="block";
+		 document.getElementById("yum1").style.display="block";
 		 document.getElementById("weak").style.display="block";
+		 	 document.getElementById("weak1").style.display="block";
 		testAPI();
 	} else {
 		console.log('Not authenticated');
 		//document.getElementById("Popup_defier").style.display="block";
 	    document.getElementById("00001").style.display="block";
         document.getElementById("yum").style.display="none";
+		document.getElementById("yum1").style.display="none";
 	}
 }
 function checkLoginState() {
