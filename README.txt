@@ -32,3 +32,6 @@ LOGIN INSTRUCTIONS:
  * GOOGLE OUATH SIGN IN
  * FACEBOOK OUATH SIGN IN
 ====================================================================================================================
+PHP WEB SERVER IMPLEMENTATION'S SNEAK PEAK CODE CAN BE FOUND AT:
+https://roycearoc.github.io/VastAtlanta/PHPCode.PNG
+====================================================================================================================
