@@ -35,6 +35,7 @@
 		<script src="search.js"></script>
 	</head>
 <body>
+	<!--
 <weak id="phone">
 <section style="background-color: gold;">
 	<div>
@@ -117,7 +118,7 @@ function myFunction1() {
 }
 </script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-
+<!--
 </div>
 
 </section>
@@ -141,29 +142,29 @@ function myFunction1() {
 		 </li>
 		    <script>
 	  
-function openNav1() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
-   document.getElementById("yum1").style.display = "none";
-}
+//function openNav1() {
+  //document.getElementById("mySidebar").style.width = "250px";
+  //document.getElementById("main").style.marginRight = "250px";
+  // document.getElementById("yum1").style.display = "none";
+//}
 
-function closeNav1() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginRight= "0";
-     document.getElementById("yum1").style.display="block";
-}
+//function closeNav1() {
+  //document.getElementById("mySidebar").style.width = "0";
+  //document.getElementById("main").style.marginRight= "0";
+   //  document.getElementById("yum1").style.display="block";
+//}
 </script>
 	 </div>
 </div>
    <script>
-	   function Popup1() {
-		   document.getElementById("Popup_defier101").style.display="block";
-		   document.getElementById("yeeha").style.display="none";
-	   }
-	   function close_popup101() {
-		   document.getElementById("Popup_defier101").style.display="none";
-		   document.getElementById("yeeha").style.display="block";
-	   }
+	   //function Popup1() {
+		//   document.getElementById("Popup_defier101").style.display="block";
+		//   document.getElementById("yeeha").style.display="none";
+	   //}
+	  // function close_popup101() {
+	//	   document.getElementById("Popup_defier101").style.display="none";
+		//   document.getElementById("yeeha").style.display="block";
+	 //  }
 	</script>
 	<div id="Popup_defier101" style="zoom: 175%; top: 36%; left: 25%; position: fixed; z-index: 10000000000000000; width: 50%; height: 400px; background-color: lightgrey; display: none;  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
 	<center><h3>Login:</h3> <form action="/action_page.php">
@@ -178,7 +179,7 @@ function closeNav1() {
 </form> <br>
 <br><br>
  <div class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onSignInFailure" data-theme="dark"></div><br>
-<!--Facebook testing-->
+Facebook testing
 <div style="display: none;" class="fb-login-button" data-width="500" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
 
  <div style="position: absolute; top:3px; right:3px;font-size: 17px; "><button style="border: none; background-color: transparent;" onclick="close_popup101()">X</button></div> </div>
@@ -199,6 +200,7 @@ function closeNav1() {
 </div>
 </div>
 </weak>
+-->
 <weak id="laptop">
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=455686781785989&autoLogAppEvents=1"></script>
@@ -231,20 +233,18 @@ FB.getLoginStatus(function(response) {
 function statusChangeCallback(response){
 	if(response.status === 'connected'){
 		console.log('Logged in and Authenticated');
+		 
 		document.getElementById("Popup_defier").style.display="none";
-			document.getElementById("Popup_defier101").style.display="none";
 	    document.getElementById("00001").style.display="none";
         document.getElementById("yum").style.display="block";
-		 document.getElementById("yum1").style.display="block";
 		 document.getElementById("weak").style.display="block";
-		 	 document.getElementById("weak1").style.display="block";
 		testAPI();
 	} else {
 		console.log('Not authenticated');
 		//document.getElementById("Popup_defier").style.display="block";
 	    document.getElementById("00001").style.display="block";
         document.getElementById("yum").style.display="none";
-		document.getElementById("yum1").style.display="none";
+		   
 	}
 }
 function checkLoginState() {
@@ -595,15 +595,17 @@ function closeNav() {
 	   function close_popup() {
 		   document.getElementById("Popup_defier").style.display="none";
    document.getElementById("weak").style.display="block";
+   	document.getElementById("bruh").style.display="block";
 		   //document.getElementById("cssmenu").style.display="block";
 	   }
 	   function Popup() {
 		   document.getElementById("Popup_defier").style.display="block";
 		   document.getElementById("weak").style.display="none";
-		   //document.getElementById("cssmenu").style.display="none";
+		 
+			document.getElementById("bruh").style.display="none";
 	   }
 	</script>
-    <script>
+       <script>
 	
       function onSignIn(googleUser) {
         // Useful data for your client-side scripts:
@@ -614,19 +616,17 @@ function closeNav() {
         console.log('Family Name: ' + profile.getFamilyName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
-
+    
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
 document.getElementById("yourself").src = profile.getImageUrl();
 document.getElementById("Popup_defier").style.opacity = '0';
-document.getElementById("Popup_defier101").style.opacity = '0';
  document.getElementById("00001").style.opacity = '0';
   document.getElementById("yum").style.display="block";
-   document.getElementById("yum1").style.display="block";
 document.getElementById("inputA").innerHTML = profile.getName();
  document.getElementById("weak").style.display="block";
- document.getElementById("weak1").style.display="block";
+
  //alert(profile.getGivenName());
       }
     </script>
