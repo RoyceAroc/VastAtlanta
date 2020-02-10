@@ -1,4 +1,4 @@
-VAST ATLANTA 	VERSION:2.0    	START DATE:01/010/2020
+VAST ATLANTA 	VERSION:2.0    	START DATE:01/10/2020
 ====================================================================================================================
 AUTHOR: ROYCE AROCKIASAMY
 VOICE: 470-587-5432
