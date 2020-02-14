@@ -41,6 +41,9 @@
 #phone {
 	display: none;
 }
+.dot {
+	display: none;
+}
 }
 /* Medium devices (landscape tablets, 768px and up) --my phone rn lol - royce */
 @media only screen and (min-width: 768px) {
@@ -92,6 +95,7 @@
 	display: none;
 }
 
+	
 } 
 
 @media only screen and (min-width: 1200px) { /*work here*/
@@ -124,6 +128,7 @@
 #laptop {
 	display: block;
 }
+
 }
 /*Big monitor*/
  @media only screen and (min-width: 1400px) {
@@ -154,6 +159,26 @@
 	display: none;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
