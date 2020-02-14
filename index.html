@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- 
@@ -22,8 +21,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 		<link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  		<link rel="stylesheet" type="text/css" href="https://roycearoc.github.io/VastAtlanta/compatibility.css">
-       	<link rel="stylesheet" type="text/css" href="https://roycearoc.github.io/VastAtlanta/index.css">
+  		<link rel="stylesheet" type="text/css" href="compatibility.css">
+       	<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name="google-signin-scope" content="profile email">
@@ -32,7 +31,7 @@
 		<link rel="stylesheet" type="text/css" href="https://roycearoc.github.io/VastAtlanta/footer.css">
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
                 <link rel="stylesheet" type="text/css" href="https://roycearoc.github.io/VastAtlanta/search.css">
-		<script src="search.js"></script>
+		<script src="https://roycearoc.github.io/VastAtlanta/search.js"></script>
 		<style>
 			body {
 	overflow-x: hidden;
@@ -294,6 +293,7 @@ function logout() {
     });
   }
 </script>
+
 <!-- Horizontal navbar on top-->
 
 <div id='cssmenu'> 
@@ -342,14 +342,14 @@ function logout() {
 		 <li><a href='https://roycearoc.github.io/VastAtlanta/Extraneous/PrivacyPolicy.html'>Privacy Policy</a></li>
       </ul>
    </li>
-  <li>
-	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <li style="position: relative; width: 10%;">
+	  <p style="text-align: right;">HI</p>
 	</li>
    
    <li> 
 
 <div>
-  <div > <input id="leggo" onclick="setInterval(Major, 1000)" onmouseover="Change(this)" onmouseout="ReverseChange(this)" style="width: 50%; height: 45.6px; position: fixed; top:3; border: none; background-color: lightgrey;" type="text" placeholder="&nbsp;&nbsp;Search All Departments" ></input>
+  <div > <input id="leggo" onclick="setInterval(Major, 1000)" onmouseover="Change(this)" onmouseout="ReverseChange(this)" style="width: 25%; height: 45.6px; position: fixed; top:3; border: none; background-color: lightgrey;" type="text" placeholder="&nbsp;&nbsp;Search All Departments" ></input>
  
  <img style="height: 45.6px; width: 46px;position: absolute; right: 0; float: right; border: none; background-color: lightgrey;" src="https://roycearoc.github.io/VastAtlanta/images/Search.png"></img>
   </div>
@@ -357,6 +357,8 @@ function logout() {
     
 </div>
    </li>
+   <li>
+	   <iframe style="border: none; position: fixed; right: 3%; height: 600px; " src="https://notifications.roycea.repl.co/Yeet.html"></iframe>
    <li id="00001">
 	   <a style="align: right; float: right; position: fixed; right:0; " href="#" onclick="Popup();">Login</a>
    </li>
@@ -395,11 +397,36 @@ function logout() {
 			   
         <h1 data-aos="zoom-out"  id="title" class="title">Vast Atlanta</h1>
             </section>
-
+			<br><br><br>
+<span onclick="bitty()" style="color: white;" class="dot"><center>
+	<div class="biggy">
+		<script>
+			function bitty() {
+                  window.location.href = "https://roycearoc.github.io/VastAtlanta/cart.html"
+			}
+		</script>
+		<style>
+			.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+	font-size: 1000%;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+</style>
+		<img style="position: relative; margin-top: 20%;top: 20%;height: 70%; width: 70%;" src="https://purepng.com/public/uploads/large/purepng.com-shopping-cartshoppingcarttrolleycarriagebuggysupermarkets-1421526532331jylag.png"></img>
+		<div class="centered"><b>0</b></div>
+	</div>
+		</center></span>
         </section>
 	<!--Searchbar list--><br><br>
 	
- <div id="list" style="width: 48.7%;top:36px;position: fixed; left: 612px;z-index: 10000000000000000000000000000;">
+ <div id="list" style="width: 37%;top:7.07%;position: fixed; left: 56%;z-index: 10000000000000000000000000000;">
 
     <aside style="display: none;" id="Search_Tables"> Tables </aside>	
 	<aside style="display: none;" id="Search_Chairs"> Chairs</aside>
@@ -439,18 +466,36 @@ $('.uis-form-icon').on('click', function () {
 
 	 </div>
 	  <aside class="lick">
-<div id="betaje" data-aos="fade-right" class="shopping_cart" style="position: static; z-index: 100000000;" >
-	<a href="cart.html" >
-		<img  src="https://image.flaticon.com/icons/png/512/222/222186.png" style="width: 250px; height: 250px; left: 70%; position: relative; top:10%"></img>
-	</a>	
-	</div>
-	<div style="position: relative; top: 100px;"
+
+	<style>
+.dot {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  opacity: 90%;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: 13.5%;
+top: 30%;
+margin-top: -8%;
+zoom: 80%; //change this later....
+cursor: cell;
+}
+.dot:hover {
+	cursor: cell;
+}
+</style>
+
+	<div style="position: relative; bottom: 250px; "
 	> 
 
 
 <!--Content to be placed here-->
 <section style="font-size: 150%;">
  <center><h1 > About Us </h1> </center>
+
+
 
 <center>	<div style="font-size: 112.5%; font-family: Lucida Sans Unicode", "Lucida Grande", sans-serif;"> Vast Atlanta, a local rental company,  has been Cumming's #1 Party Rental Company since 1962.<br> The mission of Vast Altana is to provide the best of the best materials to our customers, at a cheap and affordable price. <br> The products offered include everything you need to celebrate a fun and merrymaking party, with a handy dandy product insurance. <br><br> </div>
 </center>
@@ -467,6 +512,7 @@ $('.uis-form-icon').on('click', function () {
 <br><br>
 <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cumming%20ga&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1000px;}</style></div><br><br>
 </center>
+
 </section>
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
@@ -485,14 +531,14 @@ $('.uis-form-icon').on('click', function () {
   }
 </script>
 	</center>
-	
-	  <!-- Site footer -->
+	</div>
+<!-- Site footer -->
     <footer id="yeeha" style="text-align: left;bottom:0; position: static;" class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">Vast Atlanta, a superior Party rental store, has been the supreme choice for consumers across Cumming GA. Out of state shipping is not supported, and in-store pickup is necessary. Other than that, Vast Atlanta holds no cons. We, united as brothers and siters, bring forth the best of the best in terms of products, durability, and luxury. Thanks for choosing us!</p>
+            <p class="text-justify">Vast Atlanta, a superior Party rental store, has been the supreme choice for consumers across Cumming GA. Out of state shipping is not supported, and in-store pickup is necessary. Other than that, Vast Atlanta holds no cons. We, united as brothers and siters, bring forth the best of the best in terms of products, durability, and luxury. Thanks for choosing us!<br><br>Contact us @ 470-587-5432<br> Email @ Shop@VastAtlanta.com</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
