@@ -256,6 +256,7 @@ bottom: 28px;
   position: relative;
   width: 200px;
   left: 154%;
+  margin-bottom: 300%;
 }
 
 .uis-form-icon {
@@ -508,6 +509,7 @@ padding-top: 60px;
 #cssmenu ul li,
 #cssmenu ul li a,
 #cssmenu #menu-button {
+	zoom: 100%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -1435,4 +1437,3 @@ footer{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-
